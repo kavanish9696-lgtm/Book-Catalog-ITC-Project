@@ -1,0 +1,99 @@
+/* Book catalog container holding all book cards */
+/* Extra property display flex: enables flexible card layout */
+/* Extra property flex-wrap wrap: allows cards to wrap into subsequent rows */
+/* Extra property gap: adds even spacing between cards */
+.book-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+/* Individual book card styling with fixed width and lift transition */
+/* Extra property width: gives every card a uniform fixed width */
+/* Extra property transition: smooth animation when hovering over card */
+.book-card {
+  width: 340px;
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s;
+}
+
+/* Lift effect on hovering over a book card */
+/* Extra property transform: lifts the card upward by 5 pixels on hover */
+.book-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Book cover image on top of each card */
+/* Extra property height: sets a uniform fixed height for all book covers */
+/* Extra property object-fit cover: crops cover images proportionally without stretching */
+.book-cover {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+/* Book title text */
+.book-title {
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+  color: var(--text-color);
+}
+
+/* Book author information line */
+.book-author {
+  color: #cbd5e1;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+}
+
+/* Book genre information line */
+.book-genre {
+  color: #cbd5e1;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+}
+
+/* Star rating container line */
+.book-rating {
+  font-size: 0.95rem;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  color: #cbd5e1;
+}
+
+/* Star symbols styled with gold color and larger font size */
+.star {
+  color: var(--star-color);
+  font-size: 1.3rem;
+}
+
+/* Numerical rating text label */
+.rating-text {
+  color: #94a3b8;
+  font-size: 0.9rem;
+  margin-left: 6px;
+}
+
+/* Full description hidden by default */
+/* Extra property display none: hides the description until hover */
+.full-description {
+  display: none;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border-color);
+  font-size: 0.88rem;
+  color: #cbd5e1;
+  line-height: 1.5;
+}
+
+/* Reveal full description when hovering over the card */
+/* Extra property display block: reveals hidden description on card hover */
+.book-card:hover .full-description {
+  display: block;
+}
