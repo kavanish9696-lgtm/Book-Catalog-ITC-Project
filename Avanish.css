@@ -108,3 +108,8 @@
   padding-top: 14px;
   border-top: 1px solid var(--border-color);
 }
+/* Search input label */
+.search-label {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
