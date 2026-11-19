@@ -46,3 +46,7 @@
   font-size: 0.95rem;
   transition: color 0.2s ease;
 }
+/* Navigation link color on hover */
+.nav-link:hover {
+  color: var(--primary-color);
+}
