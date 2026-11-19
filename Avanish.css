@@ -94,3 +94,17 @@
   font-size: 0.88rem;
   color: var(--text-main);
 }
+
+.stat-pill strong {
+  color: var(--primary-color);
+}
+
+/* Search box container */
+.search-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border-color);
+}
