@@ -70,3 +70,10 @@
   margin-bottom: 8px;
   color: var(--primary-color);
 }
+
+/* Overview description paragraph */
+.overview-text {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
