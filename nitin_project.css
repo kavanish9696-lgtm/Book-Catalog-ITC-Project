@@ -45,3 +45,26 @@
   color: var(--text-color);
 }
 
+/* Book author information line */
+.book-author {
+  color: #cbd5e1;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+}
+
+/* Book genre information line */
+.book-genre {
+  color: #cbd5e1;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+}
+
+/* Star rating container line */
+.book-rating {
+  font-size: 0.95rem;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  color: #cbd5e1;
+}
+
+
