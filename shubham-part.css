@@ -13,3 +13,12 @@
   --tag-bg: #1e3a5f;
   --gradient-title: linear-gradient(90deg, #38bdf8, #818cf8);
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
