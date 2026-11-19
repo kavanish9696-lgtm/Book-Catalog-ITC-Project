@@ -66,5 +66,35 @@
   margin-bottom: 8px;
   color: #cbd5e1;
 }
+/* Star symbols styled with gold color and larger font size */
+.star {
+  color: var(--star-color);
+  font-size: 1.3rem;
+}
+
+/* Numerical rating text label */
+.rating-text {
+  color: #94a3b8;
+  font-size: 0.9rem;
+  margin-left: 6px;
+}
+
+/* Full description hidden by default */
+/* Extra property display none: hides the description until hover */
+.full-description {
+  display: none;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border-color);
+  font-size: 0.88rem;
+  color: #cbd5e1;
+  line-height: 1.5;
+}
+
+/* Reveal full description when hovering over the card */
+/* Extra property display block: reveals hidden description on card hover */
+.book-card:hover .full-description {
+  display: block;
+}
 
 
