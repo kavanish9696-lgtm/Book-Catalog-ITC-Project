@@ -50,3 +50,8 @@
 .nav-link:hover {
   color: var(--primary-color);
 }
+
+/* Overview section container */
+.overview-section {
+  margin-bottom: 36px;
+}
