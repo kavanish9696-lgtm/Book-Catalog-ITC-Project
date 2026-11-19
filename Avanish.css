@@ -113,3 +113,18 @@
   font-weight: 600;
   font-size: 0.95rem;
 }
+
+/* Search input field */
+.search-input {
+  flex: 1;
+  min-width: 240px;
+  max-width: 480px;
+  padding: 10px 14px;
+  background-color: var(--bg-main);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  color: var(--text-main);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
