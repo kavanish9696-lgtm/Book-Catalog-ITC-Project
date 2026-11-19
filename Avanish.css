@@ -128,3 +128,10 @@
   font-size: 0.95rem;
   transition: border-color 0.2s, box-shadow 0.2s;
 }
+
+/* Search input focus glow */
+.search-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.25);
+}
