@@ -116,6 +116,30 @@ btn-submit {
   background-color: var(--primary-hover);
 }
 
+.btn-reset {
+  background-color: #334155;
+  color: var(--text-main);
+}
+
+.btn-reset:hover {
+  background-color: #475569;
+}
+
+/* Footer styling */
+.footer {
+  text-align: center;
+  padding: 24px 0 12px 0;
+  border-top: 1px solid var(--border-color);
+}
+
+.footer-copy {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  margin-bottom: 6px;
+}
+
+
+
 
 
 
