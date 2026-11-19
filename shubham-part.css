@@ -1,1 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700&display=swap');
+
+:root {
+  --bg-main: #0b1120;
+  --bg-card: #1e293b;
+  --bg-card-hover: #24344d;
+  --border-color: #334155;
+  --primary-color: #38bdf8;
+  --primary-hover: #0ea5e9;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --star-color: #facc15;
+  --tag-bg: #1e3a5f;
+  --gradient-title: linear-gradient(90deg, #38bdf8, #818cf8);
+}
