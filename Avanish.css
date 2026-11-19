@@ -1,0 +1,137 @@
+/* ============================================================ */
+/* MEMBER 1 (AVANISH): Header, Navbar, Overview & Search Styles */
+/* ============================================================ */
+
+/* Header container */
+.header {
+  text-align: center;
+  padding: 24px 0 16px 0;
+}
+/* Main title with vivid gradient text effect */
+.main-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: var(--gradient-title);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 8px;
+}
+/* Tagline under the title */
+.tagline {
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+/* Navigation bar styled as a sleek card */
+.navbar {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 14px 20px;
+  margin-top: 16px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+/* Navigation links list aligned horizontally using flexbox */
+.nav-list {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  list-style: none;
+}
+/* Individual navigation link */
+.nav-link {
+  color: var(--text-main);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+/* Navigation link color on hover */
+.nav-link:hover {
+  color: var(--primary-color);
+}
+
+/* Overview section container */
+.overview-section {
+  margin-bottom: 36px;
+}
+/* Overview card styling */
+.overview-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 26px 28px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+/* Overview section title */
+.overview-title {
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+  color: var(--primary-color);
+}
+
+/* Overview description paragraph */
+.overview-text {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+/* Statistics row holding highlight pills */
+.stats-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+/* Individual stat highlight pill */
+.stat-pill {
+  background-color: #142033;
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 6px 16px;
+  font-size: 0.88rem;
+  color: var(--text-main);
+}
+
+.stat-pill strong {
+  color: var(--primary-color);
+}
+
+/* Search box container */
+.search-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border-color);
+}
+/* Search input label */
+.search-label {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* Search input field */
+.search-input {
+  flex: 1;
+  min-width: 240px;
+  max-width: 480px;
+  padding: 10px 14px;
+  background-color: var(--bg-main);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  color: var(--text-main);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Search input focus glow */
+.search-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.25);
+}
