@@ -96,6 +96,27 @@ h1, h2, h3 {
   margin-top: 22px;
 }
 
+.btn {
+  padding: 11px 24px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  transition: background-color 0.2s ease, opacity 0.2s ease;
+}
+
+btn-submit {
+  background-color: var(--primary-color);
+  color: #0b1120;
+}
+
+.btn-submit:hover {
+  background-color: var(--primary-hover);
+}
+
+
 
 
 
