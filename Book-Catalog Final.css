@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700&display=swap');
+
+/* Color theme palette stored in root variables */
+:root {
+  --bg-main: #0b1120;
+  --bg-card: #1e293b;
+  --bg-card-hover: #24344d;
+  --border-color: #334155;
+  --primary-color: #38bdf8;
+  --primary-hover: #0ea5e9;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --star-color: #facc15;
+  --tag-bg: #1e3a5f;
+  --gradient-title: linear-gradient(90deg, #38bdf8, #818cf8);
+}
+
+/* Universal reset for cross-browser consistency */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base body styling with centered container */
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-family: 'Inter', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 16px;
+  line-height: 1.6;
+}
+
+/* Headings typography */
+h1, h2, h3 {
+  font-family: 'Outfit', sans-serif;
+  color: var(--text-main);
+}
+
+
+/* ============================================================ */
+/* MEMBER 1 (AVANISH): Header, Navbar, Overview & Search Styles */
+/* ============================================================ */
+
+/* Header container */
+.header {
+  text-align: center;
+  padding: 24px 0 16px 0;
+}
+
+/* Main title with vivid gradient text effect */
+.main-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: var(--gradient-title);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 8px;
+}
+
+/* Tagline under the title */
+.tagline {
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+/* Navigation bar styled as a sleek card */
+.navbar {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 14px 20px;
+  margin-top: 16px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation links list aligned horizontally using flexbox */
+.nav-list {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  list-style: none;
+}
+
+/* Individual navigation link */
+.nav-link {
+  color: var(--text-main);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+/* Navigation link color on hover */
+.nav-link:hover {
+  color: var(--primary-color);
+}
+
+/* Overview section container */
+.overview-section {
+  margin-bottom: 36px;
+}
+
+/* Overview card styling */
+.overview-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 26px 28px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+/* Overview section title */
+.overview-title {
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+  color: var(--primary-color);
+}
+
+/* Overview description paragraph */
+.overview-text {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+/* Statistics row holding highlight pills */
+.stats-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+/* Individual stat highlight pill */
+.stat-pill {
+  background-color: #142033;
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 6px 16px;
+  font-size: 0.88rem;
+  color: var(--text-main);
+}
+
+.stat-pill strong {
+  color: var(--primary-color);
+}
+
+/* Search box container */
+.search-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border-color);
+}
+
+/* Search input label */
+.search-label {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* Search input field */
+.search-input {
+  flex: 1;
+  min-width: 240px;
+  max-width: 480px;
+  padding: 10px 14px;
+  background-color: var(--bg-main);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  color: var(--text-main);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Search input focus glow */
+.search-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.25);
+}
+
+
+/* ============================================================ */
+/* MEMBER 2 (NITIN): 6 Book Cards Catalog Grid Styles           */
+/* ============================================================ */
+
+/* Catalog section container */
+.catalog-section {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 28px;
+  margin-bottom: 36px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+/* Section heading title */
+.section-title {
+  font-size: 1.6rem;
+  margin-bottom: 6px;
+}
+
+/* Section subtitle description */
+.section-subtitle {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  margin-bottom: 24px;
+}
+
+/* Flexbox container for book cards grid */
+.book-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: flex-start;
+}
+
+/* Individual book card styling */
+.book-card {
+  width: 345px;
+  background-color: var(--bg-main);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+/* Book card hover lift effect */
+.book-card:hover {
+  transform: translateY(-6px);
+  background-color: var(--bg-card-hover);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Book cover image on top of card */
+.book-cover {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Content area inside card below image */
+.book-content {
+  padding: 16px 18px;
+}
+
+/* Genre pill tag badge */
+.genre-tag {
+  display: inline-block;
+  background-color: var(--tag-bg);
+  color: var(--primary-color);
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 12px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Book title text */
+.book-title {
+  font-size: 1.25rem;
+  margin-bottom: 6px;
+}
+
+/* Book author text line */
+.book-author {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+/* Book rating line */
+.book-rating {
+  font-size: 0.92rem;
+  margin-bottom: 8px;
+}
+
+/* Star symbols styled with gold color */
+.star {
+  color: var(--star-color);
+  font-size: 1.15rem;
+  letter-spacing: 2px;
+}
+
+/* Numerical rating label */
+.rating-number {
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  margin-left: 6px;
+}
+
+/* Full description hidden by default */
+.full-desc {
+  display: none;
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border-color);
+  font-size: 0.88rem;
+  color: #cbd5e1;
+  line-height: 1.5;
+}
+
+/* Reveal description on hovering over the card */
+.book-card:hover .full-desc {
+  display: block;
+}
+
+
+/* ============================================================ */
+/* MEMBER 3 (SHUBHAM): Add-Book Form & Footer Styles            */
+/* ============================================================ */
+
+/* Add-book section wrapper */
+.form-section {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 28px;
+  margin-bottom: 36px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+/* Form container width limit */
+.book-form {
+  max-width: 620px;
+}
+
+/* Group container for each label + input */
+.form-group {
+  margin-bottom: 18px;
+}
+
+/* Form input labels */
+.form-label {
+  display: block;
+  font-size: 0.92rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+/* Form text input fields */
+.form-input {
+  width: 100%;
+  padding: 10px 14px;
+  background-color: var(--bg-main);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  color: var(--text-main);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Form multi-line textarea */
+.form-textarea {
+  width: 100%;
+  padding: 10px 14px;
+  background-color: var(--bg-main);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  color: var(--text-main);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  resize: vertical;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Focus glow on form inputs and textarea */
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.25);
+}
+
+/* Button container aligned with flexbox */
+.form-actions {
+  display: flex;
+  gap: 14px;
+  margin-top: 22px;
+}
+
+/* Base button styling */
+.btn {
+  padding: 11px 24px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  transition: background-color 0.2s ease, opacity 0.2s ease;
+}
+
+/* Primary submit button */
+.btn-submit {
+  background-color: var(--primary-color);
+  color: #0b1120;
+}
+
+.btn-submit:hover {
+  background-color: var(--primary-hover);
+}
+
+/* Secondary reset button */
+.btn-reset {
+  background-color: #334155;
+  color: var(--text-main);
+}
+
+.btn-reset:hover {
+  background-color: #475569;
+}
+
+/* Footer styling */
+.footer {
+  text-align: center;
+  padding: 24px 0 12px 0;
+  border-top: 1px solid var(--border-color);
+}
+
+/* Footer copyright line */
+.footer-copy {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  margin-bottom: 6px;
+}
+
+/* Footer team credits */
+.footer-names {
+  color: #cbd5e1;
+  font-size: 0.85rem;
+}
